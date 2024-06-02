@@ -36,13 +36,3 @@ const ListItem = ({ course }) => {
 };
 
 export default ListItem;
-
-/*
-{
-"assigned_to": "John Doe",
-"description": "Learn how to actively listen to customers and colleagues to better understand their needs and concerns.",
-"due_date": "2022-12-31",
-"status": "In Progress",
-"title": "Active Listening"
-}
-*/

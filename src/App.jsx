@@ -11,6 +11,7 @@ import Card from "./components/Card";
 import List from "./components/List";
 import ActivityChart from "./components/Chart/ActivityChart";
 import Teams from "./components/Teams";
+import api from "./utils/api";
 
 const App = () => {
   const [data, setData] = useState(null);
@@ -18,8 +19,8 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    axios
-      .get("https://demotrainiq.com/case/dashboard")
+    api
+      .get("/case/dashboard")
       .then((res) => {
         setData(res.data.data);
         setError(null);
@@ -82,12 +83,12 @@ const App = () => {
                 </div>
 
                 <List
-                  title="Upcoming Courses"
-                  courses={data.upcoming_courses}
-                />
-                <List
                   title="In Progress Courses"
                   courses={data.in_progress_courses}
+                />
+                <List
+                  title="Upcoming Courses"
+                  courses={data.upcoming_courses}
                 />
               </div>
             )

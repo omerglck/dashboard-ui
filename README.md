@@ -2,7 +2,7 @@
 
 - The Team Activity Dashboard is an intuitive web-based application designed to track and display team activity metrics. It visualizes various parameters such as activity hours, completed exams, and lessons taken by team members. This tool helps managers and team leads to monitor performance and identify top-performing employees.
 
-# Features
+# Features
 
 - Activity Hours Chart: Displays the hours spent, exams completed, and lessons taken by team members over a selected period.
 
